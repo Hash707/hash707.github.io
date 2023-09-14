@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin: 10px 23px;
+    list-style: none;
+    font-weight: bolder;
+    border-bottom: 2px solid transparent;
+}
+
+li:hover{
+    border-bottom: 2px solid #4070F4;
+    cursor: default;    
+}
+
+
+.header{
+    padding: 10px 15px;
+    display: flex;
+    height: 60px;
+    
+    align-items: center;
+    justify-content: center;
+
+    /* adding border bottom for a line dividing header and main content */
+    border-bottom: 1.3px solid rgb(158, 158, 158, .6);
+}
+
+
+
+.nav{
+    float: right;
+    margin-left: 50%;
+}
+
+
+
+.logo{
+    float: left;
+    cursor: default;
+}
+
+.logo:hover{
+    transition: transform .3s;
+    transform: scale(1.2) ;
+}
+
+
+
+
+
+
+
+
+/* Section for the LINK CSS of the HEADER SECTION */
+
+.nav > ul > li > a{
+
+    /* we use (>) symbol to address a child element within a parent tag and if
+    in between we encounter a class tag we have to use (.) before its name (eg: .header and .nav) */
+
+    text-decoration: none;
+    color:black;
+    cursor: default;
+}
+
+
+.logo > h2 > a{
+
+    /* we use (>) symbol to address a child element within a parent tag and if
+    in between we encounter a class tag we have to use (.) before its name (eg: .header and .nav) */
+
+    text-decoration: none;
+    cursor: default;
+    color:black;
+}
+
+
+
+
+
+/*-------Main Home Section CSS---------------*/
+
+.main_home > .text_section > h1 {
+    font-size: 60px;
+
+}
+
+.text_section{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_section{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.main_home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#main_contact_btn{
+    background-color: #4070F4;
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    margin-left: -290px;
+    padding: 8px 30px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#main_contact_btn:hover{
+    transform: scale(1.02);
+    transition: transform .3s;
+}
